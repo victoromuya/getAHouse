@@ -19,7 +19,7 @@ const House = ({house}) => {
             </div>
 
             <div className="row">
-                <div className="col-md-7">
+                <div className="col-lg-7 ml-4">
                     <img src={`/images/${house.photo}.jpeg`} alt="" />
                 </div>
 
@@ -27,7 +27,7 @@ const House = ({house}) => {
                     <p className="price">${house.price}</p>
                     <p>{house.description}</p>
                     <img src={emailIcon} alt="inquiry" height={50}
-                    onClick={inquiryClick}/>
+                    onClick={inquiryClick} className="inquiry"/>
 
                     {inquiryShown && <Inquiry house={house} />}
                 </div>
